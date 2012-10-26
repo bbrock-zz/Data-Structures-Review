@@ -12,6 +12,7 @@ void bst::copy_bst(node * const& source, node *& root)
     return;
   else
   {
+    root = new node;
     root->name = new char[strlen(source->name)+1];
     strcpy(root->name, source->name);
     copy_bst(source->left, root->left);
