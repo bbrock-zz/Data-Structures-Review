@@ -2,11 +2,10 @@
 
 node * temp;
 
-while(!head)
+while(head)
 {
 temp = head;
 head = head->next;
 delete temp;
-temp = NULL;
 }
 //
